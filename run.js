@@ -7,8 +7,8 @@ var cp = require('child_process');
 require("./main.js");
 nocache("./main.js", (module) => console.log(`${module} is now updated!`));
 
-require("./Queen-Alexa.js");
-nocache("./Queen-Alexa.js", (module) => console.log(`${module} is now updated!`))
+require("./UMASHANKAR.js");
+nocache("./UMASHANKAR.js", (module) => console.log(`${module} is now updated!`))
 ;
 
 var server = cp.fork('main.js');
