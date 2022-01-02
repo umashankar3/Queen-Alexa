@@ -1,7 +1,7 @@
 {
-  "name": "Queen-Alexa",
+  "name": "UMASHANKAR Yadav",
   "version": "1.0.0",
-  "description": "Queen-Alexa",
+  "description": "UMASHANKAR YADAV",
   "main": "run.js",
   "directories": {
     "lib": "lib"
@@ -53,8 +53,8 @@
   "keywords": [
     "self bot wa"
   ],
-  "author": "Queen-Alexa",
+  "author": "UMASHANKAR Yadav",
   "license": "ISC",
   "bugs": {},
-  "homepage": "https://github.com/HYPER-MOD"
+  "homepage": "https://github.com/umashankar3/Queen-Alexa"
 }
